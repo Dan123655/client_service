@@ -1,12 +1,12 @@
 import { body } from 'express-validator'
 
-export const registerValidation =
+export const loginValidation =
     [
     body('email','Incorrect email format').isEmail(),
     body('password','Password must contain at least 5 symbols').isLength({min:5}),
 
 ]
-export const loginValidation =
+export const registerValidation =
     [
     body('email','Incorrect email format').isEmail(),
     body('password','Password must contain at least 5 symbols').isLength({min:5}),
